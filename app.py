@@ -13,21 +13,22 @@ yes_no_dict = {'no' : 0, 'yes' : 1}
 
 st.title('Stroke Likelihood Prediction	:brain:')
 age = st.slider("Choose age", 0, 100)
-gender = st.radio("Choose gender", ['male','female','other'])
 bmi = st.slider("Choose BMI", 0, 100)
-glucose = st.slider("CHoose average glucose level in blood (mg/dL)", 0, 300)
+glucose = st.slider("Choose average glucose level in blood (mg/dL)", 0, 300)
 hypertension = st.select_slider("Patient has hypertension", {'no' : 0, 'yes' : 1})
 married = st.select_slider("Married", {'no' : 0, 'yes' : 1})
 work = st.select_slider("Work type", ['never worked', 'children', 'self employed', 'private', 'govt job'])
-residence = st.radio("Choose residence type", ['Rural', 'Urban'])
 smoke = st.radio("Choose smoking status", ['never', 'former', 'smokes'])
 heart = st.select_slider("Patient has heart disease", {'no' : 0, 'yes' : 1})
 
+# Features removed after feature selection
+# gender = st.radio("Choose gender", ['male','female','other'])
+# residence = st.radio("Choose residence type", ['Rural', 'Urban'])
 
 def predict():
     transformed_data = loaded_model['scaler'].transform([[age,bmi,glucose]])[0]
-    rw = [[transformed_data[0], yes_no_dict[hypertension], yes_no_dict[heart], yes_no_dict[married], transformed_data[2], transformed_data[1], smoke_dict[smoke], int(work == 'govt job'), int(work == 'never worked'), int(work == 'private'), int(work == 'self employed'), int(work == 'children'), int(residence == 'Rural'), int(residence == 'Urban'), int(gender == 'female'), int(gender == 'male'), int(gender == 'other')]]
-
+    #rw = [[transformed_data[0], yes_no_dict[hypertension], yes_no_dict[heart], yes_no_dict[married], transformed_data[2], transformed_data[1], smoke_dict[smoke], int(work == 'govt job'), int(work == 'never worked'), int(work == 'private'), int(work == 'self employed'), int(work == 'children'), int(residence == 'Rural'), int(residence == 'Urban'), int(gender == 'female'), int(gender == 'male'), int(gender == 'other')]]
+    rw = [[transformed_data[0], yes_no_dict[hypertension], yes_no_dict[heart], yes_no_dict[married], transformed_data[2], transformed_data[1], smoke_dict[smoke], int(work == 'govt job'), int(work == 'never worked'), int(work == 'private'), int(work == 'self employed'), int(work == 'children')]]
     prediction = loaded_model['model'].predict(rw)
     prob = loaded_model['model'].predict_proba(rw)[0]
 
