@@ -33,7 +33,7 @@ We used streamlit to run our Logistic Regression ML model. Our app uses the foll
 1) Make sure all dependencies are installed.
 2) Verify that model_and_scaler.pkl is in the same directory as app.py
 3) Use `streamlit run app.py` in the terminal to run the script and launch the app locally.
-4) The app is also deployed here: [ml-stroke-likelihood-prediction-model.streamlit.app](ml-stroke-likelihood-prediction-model.streamlit.app)
+4) The app is also deployed here: ([ml-stroke-likelihood-prediction-model.streamlit.app](https://ml-stroke-likelihood-prediction-model.streamlit.app/))
    
 ## Collaborators
 Aadvika Ahuja, Brian Dao, Srihita Ramini, Tony Tran
