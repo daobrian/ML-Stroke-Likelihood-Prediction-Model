@@ -43,3 +43,6 @@ https://drive.google.com/drive/folders/1h-y9FWhZvheIFioNJu1SIV879Mq7T5Fg?usp=sha
 
 ## Collaborators
 Aadvika Ahuja, Brian Dao, Srihita Ramini, Tony Tran
+
+### Side Note:
+The pie charts are not showing up on git, but they show up in Jupyter Notebook.
