@@ -41,6 +41,9 @@ https://docs.google.com/presentation/d/1aBV6MFpMLjGVEg3EGeVHUfjWbcYgqg3lQhOmNgzo
 ## Demo Link
 https://drive.google.com/drive/folders/1h-y9FWhZvheIFioNJu1SIV879Mq7T5Fg?usp=sharing 
 
+##Link to Project Report 
+https://drive.google.com/file/d/1zgMrgC92ZsN6mzS6iFgMvLmJGePOZ64t/view?usp=sharing 
+
 ## Collaborators
 Aadvika Ahuja, Brian Dao, Srihita Ramini, Tony Tran
 
