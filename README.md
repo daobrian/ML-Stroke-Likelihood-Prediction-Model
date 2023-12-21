@@ -49,4 +49,4 @@ Aadvika Ahuja, Brian Dao, Srihita Ramini, Tony Tran
 
 #### Note:
 The pie charts(7 of them) are not showing up on git due to an unknown issue, but they show up when run in Jupyter Notebook.
-* Link to decision tree rules pdf : https://drive.google.com/file/d/13oWMFMNuC7SLDlrZoKKjqvjjpq5MCOWv/view?usp=sharing 
+  Link to decision tree rules pdf : https://drive.google.com/file/d/13oWMFMNuC7SLDlrZoKKjqvjjpq5MCOWv/view?usp=sharing 
